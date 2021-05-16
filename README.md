@@ -16,7 +16,7 @@ A Tesla clone built using [React](https://reactjs.org/), [Redux](https://redux.j
 - [Material UI Icons](https://material-ui.com/)
 
 ## Platform
-Host thorugh [Firebase](https://firebase.google.com/).
+Hosted thorugh [Firebase](https://firebase.google.com/).
 
 ## License
 Code released under the [MIT License](https://github.com/Tushar-Indurjeeth/Tesla-Clone/blob/37116fa3b8cb3a782dee0b5ff6b9377044f16e29/README.md).
