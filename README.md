@@ -20,4 +20,4 @@ A Tesla clone built using [React](https://reactjs.org/), [TypeScript](https://ww
 Hosted thorugh [Firebase](https://firebase.google.com/).
 
 ## License
-Code released under the MIT License.
+Code released under the [MIT License](https://github.com/Tushar-Indurjeeth/Tesla-Clone/blob/91eb6234f45bf01cd7147d14c98820d9532980d3/LICENSE).
