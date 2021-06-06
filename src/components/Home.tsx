@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import Section from "./Section";
 
-const Home = () => {
+const Home: React.VFC = () => {
   return (
     <Container>
       <Section

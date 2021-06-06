@@ -2,17 +2,21 @@ import styled from "styled-components";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useAppSelector } from "../app/hooks";
 
 import { selectCars } from "../features/car/carSlice";
 
-const Header = () => {
+interface StyleProps {
+  show?: boolean;
+}
+
+const Header: React.VFC = () => {
   const [burgerStatus, setBurgerStatus] = useState(false);
-  const cars = useSelector(selectCars);
+  const cars = useAppSelector(selectCars);
 
   return (
     <Container>
-      <a>
+      <a href="##">
         <img src="/images/logo.svg" alt="" />
       </a>
 
@@ -106,7 +110,7 @@ const CustomMenu = styled(MenuIcon)`
   cursor: pointer;
 `;
 
-const BurgerNav = styled.div`
+const BurgerNav = styled.div<StyleProps>`
   position: fixed;
   display: flex;
   flex-direction: column;

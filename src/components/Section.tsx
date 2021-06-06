@@ -1,7 +1,20 @@
 import styled from "styled-components";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
-const Section = ({
+interface StyleProps {
+  bgImage?: string;
+}
+
+interface Props {
+  title: string;
+  description?: string;
+  leftBtnText: string;
+  rightBtnText?: string;
+  backgroundImg: string;
+  dwnArrow?: boolean;
+}
+
+const Section: React.VFC<Props> = ({
   title,
   description,
   leftBtnText,
@@ -11,14 +24,14 @@ const Section = ({
 }) => {
   return (
     <Wrap bgImage={backgroundImg}>
-      <Fade bottom>
+      <Fade direction="down">
         <ItemText>
           <h1>{title}</h1>
           <p>{description}</p>
         </ItemText>
       </Fade>
       <Buttons>
-        <Fade bottom>
+        <Fade direction="down">
           <ButtonGroup>
             <LeftButton>{leftBtnText}</LeftButton>
             {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
@@ -32,7 +45,7 @@ const Section = ({
 
 export default Section;
 
-const Wrap = styled.div`
+const Wrap = styled.div<StyleProps>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;

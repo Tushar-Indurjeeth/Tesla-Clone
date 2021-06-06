@@ -6,3 +6,5 @@ export const store = configureStore({
     car: carReducer,
   },
 });
+
+export type RootState = ReturnType<typeof store.getState>;
